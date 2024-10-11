@@ -1,0 +1,85 @@
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 20px 0;
+  font-size: 16px;
+  transition: transform 0.3s ease;
+}
+
+thead th {
+  background-color: #f4f4f4;
+  padding: 12px;
+  text-align: left;
+  border-bottom: 2px solid #ddd;
+}
+
+tbody tr {
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+tbody tr:hover {
+  background-color: #f1f1f1;
+  transform: scale(1.02);
+}
+
+tbody td {
+  padding: 10px;
+  border-bottom: 1px solid #ddd;
+}
+
+
+@media (max-width: 768px) {
+  table {
+    font-size: 14px;
+  }
+}
+
+
+input[type="text"] {
+  padding: 10px;
+  width: 300px;
+  border-radius: 5px;
+  border: 2px solid #888;
+  margin-bottom: 20px;
+  transition: border-color 0.3s ease;
+}
+
+input[type="text"]:focus {
+  border-color: #555;
+}
+
+
+@media (max-width: 768px) {
+  input[type="text"] {
+    width: 100%;
+  }
+}
+
+
+button {
+  padding: 8px 12px;
+  border: none;
+  background-color: #4CAF50;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+button:hover {
+  background-color: #45a049;
+  transform: translateY(-2px);
+}
+
+button:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+
+
+.pagination-container {
+  display: flex;
+  justify-content: space-between;
+  margin: 20px 0;
+}
